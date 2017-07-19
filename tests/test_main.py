@@ -1,8 +1,11 @@
 import unittest
 import sys
+
 sys.path.insert(0, '/home/ubuntu/workspace/linear_search') #for main.py
 sys.path.insert(0, '/home/ubuntu/workspace/solution') #solved_search.py
+
 from main import search
+from solution import solution_search
 
 class TestLinearSearch(unittest.TestCase):
     def testing(self):
