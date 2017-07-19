@@ -1,0 +1,1 @@
+def search(ls, num):
