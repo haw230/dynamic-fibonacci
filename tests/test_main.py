@@ -1,9 +1,7 @@
 import unittest
-
 import sys
-sys.path.insert(0, '/cshome/ha10/Documents/linear_search/search/')
-
-from cshome import *
+sys.path.insert(0, '/home/ubuntu/workspace/linear_search')
+from main import search
 
 class TestLinearSearch(unittest.TestCase):
     def testing(self):
