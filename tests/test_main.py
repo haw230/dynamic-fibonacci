@@ -1,10 +1,10 @@
 import sys
 
-sys.path.insert(0, '/home/ubuntu/workspace/linear_search') #for main.py
-sys.path.insert(0, '/home/ubuntu/workspace/solution') #solved_search.py
+sys.path.insert(0, '/home/ubuntu/workspace/algorithm-name') #for algorithm function (that the user will write)
+sys.path.insert(0, '/home/ubuntu/workspace/solution') #for solution function
 
-from main import func
-from solution import solved_algo
+from main import func #"func" is user written function
+from solution import solved_algo #"solved_algo" is solution for problem
     
 def simple_test():
     assert(func()) == solved_algo()
