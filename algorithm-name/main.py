@@ -1,4 +1,4 @@
-def func(param): #search function will take in a list (ls) and a number (num)
+def func(param): #Write function name and parameters necessary. "func" will be used again in test_main.py.
   '''
   Function explanation goes here.
   '''
