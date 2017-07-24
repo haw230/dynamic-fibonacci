@@ -4,4 +4,4 @@
 #SOLUTION=
 
 test:
-	PYTHONPATH=. py.test tests #--disable-pytest-warnings --verbose --color=yes
+	PYTHONPATH=. py.test tests --disable-pytest-warnings --verbose --color=yes
