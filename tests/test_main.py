@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import sys
 
-sys.path.insert(0, '/home/ubuntu/workspace/selection_sort') #main.py
+sys.path.insert(0, '/home/ubuntu/workspace/algorithm_name') #main.py
 sys.path.insert(0, '/home/ubuntu/workspace/solution') #solution.py
 
-from main import selection_sort
-from solution import solved_selection_sort
+from main import algorithm_name
+from solution import solved_algorithm_name
 from time import sleep
 
 
@@ -25,9 +25,9 @@ class test_cases(object):
         self.total_tests = 0
 
     def tests(self): #add tests here
-        self.test(selection_sort, solved_selection_sort, [1, 3, 2])
-        self.test(selection_sort, solved_selection_sort, [1, 2, 3])
-        self.test(selection_sort, solved_selection_sort, [3, 2, 1])
+        self.test(algorithm_name, solved_algorithm_name, [1, 3, 2])
+        self.test(algorithm_name, solved_algorithm_name, [1, 2, 3])
+        self.test(algorithm_name, solved_algorithm_name, [3, 2, 1])
     
     def test(self, func1, func2, ls):
         ls1 = list(ls)
