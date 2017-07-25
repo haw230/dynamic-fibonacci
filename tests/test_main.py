@@ -26,6 +26,10 @@ class test_cases(object):
         self.test(f1, f2, [1, 3, 2])
         self.test(f1, f2, [1, 2, 3])
         self.test(f1, f2, [3, 2, 1])
+        self.test(f1, f2, [1, 1, 1, 1])
+        self.test(f1, f2, [5, 4, 3, 2, 1, 0])
+        self.test(f1, f2, sample(range(100), 10))
+        self.test(f1, f2, sample(range(50), 15))
     
     def test(self, func1, func2, ls):
         ls1 = list(ls)
