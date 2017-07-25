@@ -1,7 +1,6 @@
-.PHONY: test
+.PHONY: test test2
 
-#USER_FUNC=
-#SOLUTION=
+TEST_PATH = tests/
 
 test:
-	PYTHONPATH=. py.test tests --disable-pytest-warnings --verbose --color=yes
+	@cd $(TEST_PATH) && python test_main.py

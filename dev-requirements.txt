@@ -1,5 +1,0 @@
-pip >= 9.0.1
-six
-pytest
-pytest-expect
-git+https://github.com/pr4bh4sh/python-delayed-assert
