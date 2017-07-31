@@ -56,6 +56,6 @@ class TestCases(object):
 if(__name__ == '__main__'):
     print('\n' + aethetics.GREEN + "Running Tests..." + aethetics.END)
     print(aethetics.LINE + '\n')
-    t = test_cases()
+    t = TestCases()
     t.tests()
     t.end()
