@@ -18,7 +18,7 @@ class aethetics(object):
     BOLD = '\033[1m'
     LINE = '\033[95m———————————————————————————————————————————————————————————————\033[0m'
 
-class test_cases(object):
+class TestCases(object):
     def __init__(self):
         self.passed_tests = 0
         self.total_tests = 0
