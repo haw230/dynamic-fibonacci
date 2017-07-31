@@ -7,6 +7,8 @@ sys.path.insert(0, '/home/ubuntu/workspace/solution')
 from main import algorithm_name #change to proper function name
 from solution import solved_algorithm_name #change to proper function name
 from time import sleep
+from random import sample
+
 class aethetics(object):
     BLUE = '\033[94m'
     GREEN = '\033[92m'
