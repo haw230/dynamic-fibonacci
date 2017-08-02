@@ -1,4 +1,4 @@
-.PHONY: test test2
+.PHONY: test
 
 TEST_PATH = tests/
 

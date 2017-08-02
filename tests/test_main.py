@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 import sys
 
-sys.path.insert(0, '/home/ubuntu/workspace/algorithm_name') #change this to correct folder name
+sys.path.insert(0, '/home/ubuntu/workspace/dynamic_fibonacci') #change this to correct folder name
 sys.path.insert(0, '/home/ubuntu/workspace/solution')
 
-from main import algorithm_name #change to proper function name
-from solution import solved_algorithm_name #change to proper function name
+from main import fib #change to proper function name
+from solution import solved_fib #change to proper function name
 from time import sleep
 from random import sample
 
@@ -24,24 +24,24 @@ class TestCases(object):
         self.total_tests = 0
 
     def tests(self): #add tests here
-        f1,f2 = algorithm_name, solved_algorithm_name #change to proper function names
-        self.test(f1, f2, [1, 3, 2])
-        self.test(f1, f2, [1, 2, 3])
-        self.test(f1, f2, [3, 2, 1])
-        self.test(f1, f2, [1, 1, 1, 1])
-        self.test(f1, f2, [5, 4, 3, 2, 1, 0])
-        self.test(f1, f2, sample(range(100), 10))
-        self.test(f1, f2, sample(range(50), 15))
+        f1,f2 = fib, solved_fib #change to proper function names
+        self.test(f1, f2, 4)
+        self.test(f1, f2, 5)
+        self.test(f1, f2, 6)
+        self.test(f1, f2, 7)
+        self.test(f1, f2, 8)
+        self.test(f1, f2, 9)
+        self.test(f1, f2, 30)
+        self.test(f1, f2, 60)
     
-    def test(self, func1, func2, ls):
-        ls1 = list(ls)
-        x, y = func1(ls), func2(ls1)
+    def test(self, func1, func2, n):
+        x, y = func1(n), func2(n)
         if(x == y):
-            print(aethetics.GREEN + 'Test passed with param of ' + aethetics.BLUE + str(ls) + aethetics.END + '\n' + aethetics.END)
+            print(aethetics.GREEN + 'Test passed with param of ' + aethetics.BLUE + str(n) + aethetics.END + '\n' + aethetics.END)
             print(aethetics.BOLD + str(x) + aethetics.END + ' matches the answer ' + aethetics.BOLD + str(y) + aethetics.END)
             self.passed_tests += 1
         else:
-            print(aethetics.FAIL + 'Test failed with param of ' + aethetics.BLUE + str(ls) + aethetics.END + '\n' + aethetics.END)
+            print(aethetics.FAIL + 'Test failed with param of ' + aethetics.BLUE + str(n) + aethetics.END + '\n' + aethetics.END)
             print(aethetics.BOLD + str(x) + aethetics.END + ' does not match the answer ' + aethetics.BOLD + str(y) + aethetics.END)
         self.total_tests += 1
         print(aethetics.LINE + '\n')
