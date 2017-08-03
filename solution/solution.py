@@ -1,7 +1,7 @@
 memo = {}
 
 def solved_fib(n):
-    if n < 2:
+    if(n < 2):
         return 1
     if(n in memo):
         return memo[n]
