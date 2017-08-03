@@ -1,10 +1,10 @@
-def solved_fib(n, memo = {}):
+memo = {}
+
+def solved_fib(n):
     if n < 2:
         return 1
-    try:
+    if(n in memo):
         return memo[n]
-    except KeyError:
-        result = solved_fib(n - 1, memo) +\
-                 solved_fib(n - 2, memo)
-        memo[n] = result
-        return result
+    result = solved_fib(n - 1) + solved_fib(n - 2)
+    memo[n] = result
+    return result
